@@ -3,8 +3,8 @@ pipeline {
     agent any
     environment {
         AZURECREDENTIALS = credentials('azure-credentials')
-        REPOSITORY = "tempregistrykurs1.azurecr.io"
-        DOCKERIMAGE = "paul-sky-webapp" // Please change this to your desired Docker image name
+        REPOSITORY = "cihatregistry01.azurecr.io"
+        DOCKERIMAGE = "cihat-sky-webapp" // Please change this to your desired Docker image name
     }
     stages {
         stage('Build Image') {
